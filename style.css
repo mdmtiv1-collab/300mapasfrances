@@ -3,13 +3,15 @@
 @font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/poppins-700.woff2) format('woff2')}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/poppins-800.woff2) format('woff2')}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:900;font-display:swap;src:url(fonts/poppins-900.woff2) format('woff2')}
+@font-face{font-family:'Poppins Fallback';src:local('Arial');size-adjust:112%;ascent-override:93.7%;descent-override:31.2%;line-gap-override:8.3%}
+@font-face{font-family:'Inter Fallback';src:local('Arial');size-adjust:107.4%;ascent-override:90.2%;descent-override:22.5%;line-gap-override:0%}
 
 /* ==========================================
    CSS VARIABLES & DESIGN SYSTEM (LIGHT)
    ========================================== */
 :root {
-  --font-title: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-title: 'Poppins', 'Poppins Fallback', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, sans-serif;
   
   /* Paleta de cores */
   --bg-primary: #ffffff;
